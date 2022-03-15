@@ -1,0 +1,81 @@
+body{
+    box-sizing: border-box;
+    background: rgb(34,193,195);
+}
+
+.container{
+    display: block;
+    
+}
+.tittle{
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(102, 5, 5, 0.815);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.inputTextStyle{
+    display: block;
+    margin: 10px auto;
+    width: 500px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 2px;
+
+}
+
+.ulListStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.LiStyle{
+    list-style: none;
+}
+
+.labelStyle{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+
+}
+.btnStyle{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+
+.btnStyle1{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px ;
+    border-radius: 5px;
+    color: rgba(102, 5, 5, 0.815);
+    font-weight: bold;
+  
+}
+.btnStyle2{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  color: rgba(102, 5, 5, 0.815);
+  font-weight: bold;
+}
