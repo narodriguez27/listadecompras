@@ -1,12 +1,12 @@
 let btnEnviar = document.getElementById ("btnEnviar");
 let btnClear = document.getElementById("bntClear");
 let bodyEntero = document.querySelector("body");
-let input = document.createElement("input");
 let ulList = document.getElementById("ulList");
 let textValue = document.getElementById("textValue");
 let propertyLi = document.getElementById ("propertyLi");
 let propertyCheck = document.getElementById ("propertyCheck");
 let propertyLabel = document.getElementById ("propertyLabel");
+
 
 btnEnviar.onclick =  () => {
    
@@ -18,7 +18,10 @@ btnEnviar.onclick =  () => {
     }   
 }
 btnClear.onclick = () => {
-        remove();
+    if (propertyLi <= 0){
+        alert("Lista de compras vacia");
+    }
+    remove();
 }
 
 let newElements = () => {
@@ -45,4 +48,15 @@ let remove = () =>{
             ulList.removeChild(ulList.firstChild);
         }
 }
+textValue.addEventListener('focus', () => {
+    if (!textValue.value =='') {
+        textValue.value=''
+    };
+});
+btnEnviar.addEventListener('click', () => {
+    if (!textValue.value =='') {
+        textValue.value=''
+    };
+});
+
 
