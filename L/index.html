@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="/L/css/style.css">
+    
     <title>Document</title>
 </head>
 <body>
   <div class="container">
-      <h1 class="tittle">Lista de Compas</h1>
-    <div class="inputStyle">
-        <input type="text" id="textValue" class="inputTextStyle">
+      <h1 class="tH1">Lista de Compras</h1>
+    <div id ="inputControl" class="inputControl">
+        <input type="text" id="textValue" class="inputText" maxlength="20" placeholder="Ingrese Producto"> 
+        <div id="buttonControler">
+            <button id="btnSend" class="btnSendStyle"><i class="fa-solid fa-share"></i>ENVIAR</button>
+        </div>
     </div>
-    <div class="divDimencion">
-            <ul id="ulList" class="ulListStyle">
-        </ul>
+    <div class="ulDivControl">
+         <ol id="ulListFood" class="ulListStyle">
+             
+         </ol>
     </div>
-<div class="btnStyle">
-    <button id="btnEnviar" class="btnStyle1">Send</button>
-    <button id="bntClear" class="btnStyle2">Clear</button>
-</div>
+        <button id="btnClearList" class="btnClearListStyle"><i class="fa-solid fa-trash"></i>ELIMINAR</button>
+    </div>
   </div>
-    <script src="app.js"></script>
+
+  <span class="material-icons-add">
+ 
+    </span>
+    <script src="/L/js/app.js"></script>
+
 </body>
 </html>
+<span></span>
